@@ -14,16 +14,16 @@ When you use p=0.3, each of these 45 possible edges has a 30% chance of being in
 
 # Parameters
 n = 10  # number of nodes
-p = 0.3  # probability of an edge # 0.5 default answer
+p = 0.5  # probability of an edge # 0.5 default answer
 
 # Create a random graph using the G(n, p) model
 G = nx.erdos_renyi_graph(n, p)
 
 # Draw the graph
-plt.figure(figsize=(8, 6))
+plt.figure()
 nx.draw(G, with_labels=True, node_color='skyblue', node_size=700, edge_color='k')
 plt.title('Random Graph from G(n, p) Model')
 # Save the plot
-plt.savefig('./random_graph_generator/erdos_renyi/plots/random_graph_gnp.png')
+plt.savefig(f'./random_graph_generator/erdos_renyi/plots/random_graph_gnp_G({n},{p}).png')
 # Show the plot
 plt.show()

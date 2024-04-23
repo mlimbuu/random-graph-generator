@@ -18,11 +18,11 @@ def create_moderate_grid_graph(rows, cols):
     G = nx.convert_node_labels_to_integers(G)
     return G
 
-def plot_graph(G, title):
-    plt.figure(figsize=(8, 5))
+def plot_graph(G):
     # Using nx.spring_layout for positioning nodes, with the incremented graph
     pos = nx.spring_layout(G, seed=42)
     nx.draw(G, pos, with_labels=True, node_color='lightgreen', edge_color='gray')
+    title = f"grid_style_N{N}_{rows}x{cols}"
     plt.title(title)
     # Save the plot
     plt.savefig(f'./random_graph_generator/grid_style/plots/{title}.png')
@@ -42,4 +42,4 @@ rows, cols = N//cols, cols
 
 grid_graph = create_moderate_grid_graph(rows, cols)
 print(f"grid_graph: {grid_graph}")
-plot_graph(grid_graph, f"Moderate Grid Graph: {rows}x{cols}")
+plot_graph(grid_graph)

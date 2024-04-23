@@ -4,7 +4,7 @@
 ![Alt text](erdos_renyi/plots/random_graph_gnm_G(10,30).png)
 
 ## Grid Style
-![Alt text](grid_style/plots/Moderate Grid Graph: 3x5.png)
+![Alt text](grid_style/plots/grid_style_N15_3x5.png)
 
 ## Nearest Neighbor
 ![Alt text](nearest_neighbor/plots/nearest_neighbor_graph:20_30.png)
